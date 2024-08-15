@@ -1,19 +1,7 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Button from "./components/Button/Button";
 import Input from "./components/Input/Input";
-import { Menu } from "./pages/Menu/Menu";
-import { Cart } from "./pages/Cart/Cart";
 
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Menu />,
-    },
-    {
-        path: "/cart",
-        element: <Cart />,
-    },
-]);
+
 
 function App() {
     return (
@@ -28,7 +16,6 @@ function App() {
                 Выход
             </Button>
             <Input placeholder="Email" />
-            <RouterProvider router={router} />
         </>
     );
 }
