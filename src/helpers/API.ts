@@ -1,0 +1,1 @@
+export const PRFIX = "https://purpleschool.ru/pizza-api-demo";
