@@ -26,6 +26,7 @@ const router = createBrowserRouter([
             {
                 path: "product/:id",
                 element: <Product />,
+                errorElement: <>Ошибка</>,
                 loader: async ({ params }) => {
                     const { data } = await axios.get(`${PRFIX}/products/${params.id}`);
                     return data;
