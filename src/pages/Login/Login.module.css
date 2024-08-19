@@ -37,3 +37,14 @@
     text-decoration: none;
     color: var(--primary-color);
 }
+
+.links a:hover {
+    text-decoration: none;
+    color: var(--primary-hover-color);
+}
+
+.error {
+    color: white;
+    padding: 20px;
+    background-color: #FFC529;
+}
