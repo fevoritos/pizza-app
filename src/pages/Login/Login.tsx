@@ -59,7 +59,7 @@ export function Login() {
             </div>
             <div className={styles["field"]}>
                 <label htmlFor="password">Ваш пароль</label>
-                <Input id="password" name="password" placeholder="Пароль"></Input>
+                <Input id="password" name="password" type="password" placeholder="Пароль"></Input>
             </div>
             <Button appearance="big">Вход</Button>
         </form>
