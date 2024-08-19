@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Headling from "../../components/Headling/Headling";
 import Search from "../../components/Search/Search";
-import { PRFIX } from "../../helpers/API";
+import { PREFIX } from "../../helpers/API";
 import { IProduct } from "../../interfaces/product.interface";
 import styles from "./Menu.module.css";
 import axios, { AxiosError } from "axios";
@@ -20,7 +20,7 @@ export function Menu() {
             //         resolve();
             //     }, 2000);
             // });
-            const { data } = await axios.get<IProduct[]>(`${PRFIX}/products`);
+            const { data } = await axios.get<IProduct[]>(`${PREFIX}/products`);
             setProducts(data);
             setIsloading(false);
         } catch (e) {
