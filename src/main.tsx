@@ -9,6 +9,9 @@ import { Layout } from "./layout/Menu/Layout.tsx";
 import { Product } from "./pages/Product/Product.tsx";
 import axios from "axios";
 import { PREFIX } from "./helpers/API.ts";
+import { AuthLayout } from "./layout/Auth/AuthLayout.tsx";
+import { Register } from "./pages/Register/Register.tsx";
+import { Login } from "./pages/Login/Login.tsx";
 
 const router = createBrowserRouter([
     {
@@ -34,6 +37,20 @@ const router = createBrowserRouter([
                         })
                     });
                 }
+            }
+        ]
+    },
+    {
+        path: "auth",
+        element: <AuthLayout />,
+        children: [
+            {
+                path: "login",
+                element: <Login />
+            },
+            {
+                path: "register",
+                element: <Register />
             }
         ]
     },

@@ -8,7 +8,7 @@ export function Layout() {
         <div className={styles["layout"]}>
             <div className={styles["sidebar"]}>
                 <div className={styles["user"]}>
-                    <img className={styles["avatar"]} src="avatar.png" alt="Аватар пользователя" />
+                    <img className={styles["avatar"]} src="/avatar.png" alt="Аватар пользователя" />
                     <div className={styles["name"]}>Антон Шпага</div>
                     <div className={styles["email"]}>Shpaga@mail.ru</div>
                 </div>
@@ -16,18 +16,18 @@ export function Layout() {
                     <NavLink to="/" className={({ isActive }) => cn(styles["link"], {
                         [styles.active]: isActive
                     })}>
-                        <img src="menu-icon.svg" alt="Иконка меню" />
+                        <img src="/menu-icon.svg" alt="Иконка меню" />
                         Меню
                     </NavLink>
                     <NavLink to="/cart" className={({ isActive }) => cn(styles["link"], {
                         [styles.active]: isActive
                     })}>
-                        <img src="cart-icon.svg" alt="Иконка корзины" />
+                        <img src="/cart-icon.svg" alt="Иконка корзины" />
                         Корзина
                     </NavLink>
                 </div>
                 <Button className={styles["exit"]}>
-                    <img src="exit-icon.svg" alt="Иконка выхода" />
+                    <img src="/exit-icon.svg" alt="Иконка выхода" />
                     Выйти
                 </Button>
             </div>
