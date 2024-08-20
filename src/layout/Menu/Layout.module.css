@@ -10,6 +10,7 @@
     border-right: 1px solid var(--separator-color);
     position: fixed;
     min-height: 100vh;
+    width: 150px;
 }
 
 .user {
