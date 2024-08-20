@@ -40,7 +40,7 @@ export function Menu() {
         </div>
         <div>
             {error && <>{error}</>}
-            {!isLoading && <MenuList products={products} />}
+            {!isLoading && <MenuList products={products.concat(products).concat(products).concat(products)} />}
             {isLoading && <>Загржаем продукты...</>}
         </div>
     </>;
