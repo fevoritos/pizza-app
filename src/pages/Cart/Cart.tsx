@@ -32,7 +32,7 @@ export function Cart() {
             if (!product) {
                 return;
             }
-            return <CartItem count={i.count} {...product} />;
+            return <CartItem count={i.count} {...product} key={product.id} />;
 
         })}
     </>;
