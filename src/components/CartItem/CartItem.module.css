@@ -15,7 +15,7 @@
 
 .actions {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     margin-left: auto;
     align-items: center;
     align-self: flex-start;

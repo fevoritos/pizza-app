@@ -15,6 +15,7 @@ import { Login } from "./pages/Login/Login.tsx";
 import { RequireAuth } from "./helpers/RequireAuth.tsx";
 import { Provider } from "react-redux";
 import { store } from "./store/store.ts";
+import { Success } from "./pages/Success/Success.tsx";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Menu />
+            },
+            {
+                path: "/success",
+                element: <Success />
             },
             {
                 path: "/cart",

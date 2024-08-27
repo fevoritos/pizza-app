@@ -39,3 +39,10 @@
     text-align: right;
     color: var(--text-color);
 }
+
+.checkout {
+    margin-top: 70px;
+    max-width: 512px;
+    display: flex;
+    justify-content: center;
+}
