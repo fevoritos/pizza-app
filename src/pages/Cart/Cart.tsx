@@ -57,7 +57,7 @@ export function Cart() {
         </div>
         <hr className={styles["hr"]} />
         <div className={styles["line"]}>
-            <div className={styles["text"]}>Итог &nbsp;<span>{`(${count})`}</span></div>
+            <div className={styles["text"]}>Итог &nbsp;<span>({count})</span></div>
             <div className={styles["price"]}>{total + DELIVERY_FEE}&nbsp;<span>₽</span></div>
         </div>
     </>;
