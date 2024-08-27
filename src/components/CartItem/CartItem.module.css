@@ -50,6 +50,10 @@
     border: 1px solid var(--primary-color);
 }
 
+.minus:hover {
+    border: 1px solid var(--primary-hover-color);
+}
+
 .plus {
     display: flex;
     align-items: center;
@@ -61,6 +65,11 @@
     border: 1px solid var(--primary-color);
 }
 
+.plus:hover {
+    border: 1px solid var(--primary-hover-color);
+    background: var(--primary-hover-color);
+}
+
 .remove {
     display: flex;
     align-items: center;
@@ -70,6 +79,11 @@
     width: 30px;
     height: 30px;
     margin-left: 2px;
+}
+
+.remove:hover {
+    border: 1px solid var(--primary-hover-color);
+    border-radius: 50%;
 }
 
 .number {
