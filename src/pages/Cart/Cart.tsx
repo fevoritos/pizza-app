@@ -24,6 +24,7 @@ export function Cart() {
 
     useEffect(() => {
         loadAllItems();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [items]);
 
     return <>
