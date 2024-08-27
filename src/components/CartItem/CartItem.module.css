@@ -48,6 +48,7 @@
     border-radius: 50%;
     background: none;
     border: 1px solid var(--primary-color);
+    cursor: pointer;
 }
 
 .minus:hover {
@@ -63,6 +64,7 @@
     border-radius: 50%;
     background: var(--primary-color);
     border: 1px solid var(--primary-color);
+    cursor: pointer;
 }
 
 .plus:hover {
@@ -79,6 +81,7 @@
     width: 30px;
     height: 30px;
     margin-left: 2px;
+    cursor: pointer;
 }
 
 .remove:hover {
