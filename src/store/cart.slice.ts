@@ -4,13 +4,13 @@ import { loadState } from "./storage";
 export const CART_PERSISTENT_STATE = "cartData";
 
 
-export interface CartItem {
+export interface ICartItem {
     id: number;
     count: number;
 }
 
 export interface CartState {
-    items: CartItem[];
+    items: ICartItem[];
 }
 
 const initialState: CartState = loadState<CartState>(CART_PERSISTENT_STATE) ?? {
